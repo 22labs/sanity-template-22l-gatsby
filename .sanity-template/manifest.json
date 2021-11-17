@@ -18,32 +18,32 @@
     "provider": "netlify",
     "sites": [
       {
-        "id": "studio",
+        "id": "backend",
         "type": "studio",
         "title": "Sanity Studio",
         "description": "The Sanity Studio is where you edit and structure your content.",
-        "dir": "../studio",
+        "dir": "../backend",
         "previewMedia": {
           "type": "image",
           "src": ".sanity-template/assets/studio.jpg",
           "alt": "A preview image of the Sanity Studio."
         },
         "buildSettings": {
-          "base": "studio",
+          "base": "backend",
           "dir": "dist",
           "cmd": "npm run build && cp netlify.toml dist"
         },
         "requirements": ["build-hook"]
       },
       {
-        "id": "web",
+        "id": "frontend",
         "type": "web",
-        "title": "Blog Website",
+        "title": "Gatsby Website",
         "requirements": ["build-hook"],
         "description": "A minimal example of a frontend fetching data from Sanity.io.",
-        "dir": "../web",
+        "dir": "../frontend",
         "buildSettings": {
-          "base": "web",
+          "base": "frontend",
           "dir": "public",
           "cmd": "cp index.html public/index.html"
         },

@@ -1,0 +1,23 @@
+{
+  local_certs
+}
+
+# `lvh.me` domain, generally available
+lvh.me {
+  encode gzip
+  reverse_proxy frontend:8000
+}
+studio.lvh.me {
+  encode gzip
+  reverse_proxy backend:3333
+}
+
+# Custom domain for those who specify it
+twentytwolabs.local {
+  encode gzip
+  reverse_proxy frontend:8000
+}
+studio.twentytwolabs.local {
+  encode gzip
+  reverse_proxy backend:3333
+}

@@ -1,3 +1,5 @@
+const sanityClientConfig = require('./src/sanity/client-config')
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -13,6 +15,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        ...sanityClientConfig,
+        token: process.env.SANITY_TOKEN,
       },
     },
     `gatsby-transformer-sharp`,

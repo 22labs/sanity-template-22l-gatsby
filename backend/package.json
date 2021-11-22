@@ -7,7 +7,7 @@
   "author": "Knut Melvær <knut@sanity.io>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
+    "start": "sanity start --host 0.0.0.0 --port 3333",
     "test": "sanity check",
     "build": "sanity build"
   },

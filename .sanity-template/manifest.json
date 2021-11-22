@@ -9,6 +9,11 @@
   },
   "technologies": [
     {
+      "id": "gatsby",
+      "name": "Gatsby",
+      "url": "https://www.gatsbyjs.org/"
+    },
+    {
       "id": "netlify",
       "name": "Netlify",
       "url": "https://www.netlify.com/"
@@ -45,13 +50,25 @@
         "buildSettings": {
           "base": "frontend",
           "dir": "public",
-          "cmd": "cp index.html public/index.html"
+          "cmd": "npm run build"
         },
         "previewMedia": {
           "type": "image",
           "src": ".sanity-template/assets/frontend.png",
           "alt": "A preview image of the webpage."
-        }
+        },
+        "requiredCorsOrigins": [
+          {
+            "origin": "https://lvh.me",
+            "allowCredentials": false
+          }
+        ],
+        "requiredTokens": [
+          {
+            "role": "deploy-studio",
+            "label": "GraphQL API Deployer"
+          }
+        ]
       }
     ]
   }

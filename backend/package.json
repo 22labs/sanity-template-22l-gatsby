@@ -24,7 +24,9 @@
     "@sanity/vision": "^1.150.1",
     "prop-types": "^15.6",
     "react": "^16.2",
-    "react-dom": "^16.2"
+    "react-dom": "^16.2",
+    "sanity-plugin-better-slug": "^1.0.0",
+    "sanity-plugin-netlify-deploy-status-badge": "^0.0.3"
   },
   "devDependencies": {
     "@sanity/cli": "^1.150.1"

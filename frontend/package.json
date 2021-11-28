@@ -32,6 +32,13 @@
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "prettier": "^2.4.1"
   },
   "keywords": [
@@ -40,12 +47,16 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop --host 0.0.0.0 --port 8000",
-    "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "develop": "gatsby develop",
+    "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix",
+    "lint": "eslint '*/**/*.{js,ts,tsx}'",
+    "prettier:check": "prettier --check './**/*.{js,ts,tsx}'",
+    "prettier:fix": "prettier --write './**/*.{js,ts,tsx}'",
+    "serve": "gatsby serve",
+    "start": "gatsby develop --host 0.0.0.0 --port 8000",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",

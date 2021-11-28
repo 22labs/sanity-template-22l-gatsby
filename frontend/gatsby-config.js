@@ -26,6 +26,13 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sanity-image`,
+      options: {
+        ...sanityClientConfig,
+        fragmentTypeName: `SanityImageWithAlt`,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

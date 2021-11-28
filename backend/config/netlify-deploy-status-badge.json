@@ -1,3 +1,3 @@
 {
-  "apiId": "<YOUR-NETLIFY-API-OR-SITE-ID-HERE>"
+  "apiId": "<#< deployments.web.providerInfo.siteId >#>"
 }

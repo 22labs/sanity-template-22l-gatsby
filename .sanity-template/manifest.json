@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "title": "Sanity.io starter template for Netlify",
-  "description": "Minimal and barebones example of a starter for deployment on Netlify",
+  "title": "Twenty-Two Labs starter with Sanity and Gatsby",
+  "description": "Minimal starter for deployment on Netlify",
   "previewMedia": {
     "type": "image",
     "src": ".sanity-template/assets/netlify.png",
